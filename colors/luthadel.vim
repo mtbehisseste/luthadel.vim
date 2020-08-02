@@ -144,27 +144,27 @@ set background=dark
 " {{{
 
 " import, from
-hi PreProc    ctermfg=196
+hi PreProc    ctermfg=196   guifg=#ff0000
 " def, if, for, while, with, as, return
-hi Statement  ctermfg=202
+hi Statement  ctermfg=202   guifg=#ff5f00
 " def <function name>, None, True, all, classmethod
-hi Identifier ctermfg=208
+hi Identifier ctermfg=208   guifg=#ff8700
 " C: int, long
-hi Type       ctermfg=214
+hi Type       ctermfg=214   guifg=#ffaf00
 " <int>, <str>
-hi Constant   ctermfg=221
+hi Constant   ctermfg=221   guifg=#ffd75f
 
 " \n, \t, \x00 in <str>
-hi Special    ctermfg=41
+hi Special    ctermfg=41    guifg=#00d75f
 " # comment
-hi Comment    ctermfg=41
+hi Comment    ctermfg=41    guifg=#00d75f
 " TODO, FIXME, XXX
-hi Todo       ctermfg=41  cterm=reverse
+hi Todo       ctermfg=41    cterm=reverse   guifg=#00d75f   gui=reverse
 
 " hi cterm=rev
-hi Error      ctermfg=196 cterm=reverse
+hi Error      ctermfg=196   cterm=reverse   guifg=#ff0000   gui=reverse
 
-hi Underlined cterm=underline
+hi Underlined cterm=underline   gui=underline
 
 " TBD
 hi Ignore     ctermbg=21  cterm=underline
@@ -173,12 +173,12 @@ hi Ignore     ctermbg=21  cterm=underline
 " vim groups
 " {{{
 
-hi Normal       ctermfg=254
-hi Visual       ctermbg=238
+hi Normal       ctermfg=254     guifg=#e4e4e4
+hi Visual       ctermbg=238     guifg=#444444
 "hi VisualNOS
-hi NonText      ctermfg=239
+hi NonText      ctermfg=239     guifg=#4e4e4e
 
-hi LineNr       ctermfg=239
+hi LineNr       ctermfg=239     guifg=#4e4e4e
 "hi Cursor
 "hi CursorIM
 "hi CursorColumn
@@ -186,61 +186,61 @@ hi LineNr       ctermfg=239
 "hi CursorLineNr
 
 " NC: non-current
-hi StatusLineNC ctermfg=239
-hi StatusLine   ctermfg=254
-hi ModeMsg      ctermfg=254
-hi WildMenu     cterm=reverse
+hi StatusLineNC ctermfg=239     guifg=#4e4e4e
+hi StatusLine   ctermfg=254     guifg=#e4e4e4
+hi ModeMsg      ctermfg=254     guifg=#e4e4e4
+hi WildMenu     cterm=reverse   gui=reverse
 
-hi TabLine      ctermfg=239
+hi TabLine      ctermfg=239     guifg=#4e4e4e
 "hi TabLineFill
 "hi TabLineSel
 
-hi Folded       ctermfg=239
-hi FoldColumn   ctermfg=239
+hi Folded       ctermfg=239     guifg=#4e4e4e
+hi FoldColumn   ctermfg=239     guifg=#4e4e4e
 
 " set listchars?
 " ▵▵▵▵
-hi SpecialKey   ctermfg=239
+hi SpecialKey   ctermfg=239     guifg=#4e4e4e
 
-hi VertSplit    ctermfg=239
+hi VertSplit    ctermfg=239     guifg=#4e4e4e
 " set colorcolumn=81
-hi ColorColumn  ctermfg=196
-hi SignColumn   ctermfg=196
+hi ColorColumn  ctermfg=196     guifg=#ff0000
+hi SignColumn   ctermfg=196     guifg=#ff0000
 
 " ( _)_
-hi MatchParen   ctermbg=20
+hi MatchParen   ctermbg=20      guifg=#0000d7
 
-hi IncSearch    ctermbg=20
-hi Search       ctermbg=20
+hi IncSearch    ctermbg=20      guifg=#0000d7
+hi Search       ctermbg=20      guifg=#0000d7
 
 " popup menu: Ctrl-N
-hi Pmenu        ctermfg=231 ctermbg=18
-hi PmenuSel     ctermfg=231 ctermbg=20
-hi PmenuSbar    ctermbg=18
-hi PmenuThumb   ctermbg=20
+hi Pmenu        ctermfg=231 ctermbg=18 guifg=#ffffff guibg=#000087
+hi PmenuSel     ctermfg=231 ctermbg=20 guifg=#ffffff guibg=#0000d7
+hi PmenuSbar    ctermbg=18      guibg=#000087
+hi PmenuThumb   ctermbg=20      guifg=#0000d7
 
 "hi MoreMsg
-hi Question     ctermfg=20 ctermbg=231 cterm=reverse
-hi WarningMsg   ctermfg=20 ctermbg=231 cterm=reverse
-hi ErrorMsg     ctermfg=20 ctermbg=231 cterm=reverse
+hi Question     ctermfg=20 ctermbg=231 cterm=reverse guifg=#0000d7 guibg=#ffffff gui=reverse
+hi WarningMsg   ctermfg=20 ctermbg=231 cterm=reverse guifg=#0000d7 guibg=#ffffff gui=reverse
+hi ErrorMsg     ctermfg=20 ctermbg=231 cterm=reverse guifg=#0000d7 guibg=#ffffff gui=reverse
 
-hi SpellBad     cterm=underline
-hi SpellCap     cterm=underline
-hi SpellRare    cterm=underline
-hi SpellLocal   cterm=underline
+hi SpellBad     cterm=underline gui=underline
+hi SpellCap     cterm=underline gui=underline
+hi SpellRare    cterm=underline gui=underline
+hi SpellLocal   cterm=underline gui=underline
 
-hi DiffDelete   ctermbg=52
-hi DiffAdd      ctermbg=22
-hi DiffText     ctermbg=130
+hi DiffDelete   ctermbg=52      guifg=#5f0000
+hi DiffAdd      ctermbg=22      guifg=#005f00
+hi DiffText     ctermbg=130     guifg=#af5f00
 "hi DiffChange
 
 " # Markdown Title
-hi Title        ctermfg=231
+hi Title        ctermfg=231     guifg=#ffffff
 " $ nvim ~
 "hi Directory
 
 " TBC
-hi Conceal      ctermbg=21 cterm=underline
+hi Conceal      ctermbg=21 cterm=underline guifg=#0000ff gui=underline
 
 " GUI
 
