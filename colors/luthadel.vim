@@ -174,7 +174,7 @@ hi Ignore     ctermbg=21  cterm=underline
 " {{{
 
 hi Normal       ctermfg=254     guifg=#e4e4e4
-hi Visual       ctermbg=238     guifg=#444444
+hi Visual       ctermbg=238     guibg=#444444
 "hi VisualNOS
 hi NonText      ctermfg=239     guifg=#4e4e4e
 
@@ -208,16 +208,16 @@ hi ColorColumn  ctermfg=196     guifg=#ff0000
 hi SignColumn   ctermfg=196     guifg=#ff0000
 
 " ( _)_
-hi MatchParen   ctermbg=20      guifg=#0000d7
+hi MatchParen   ctermbg=20      guibg=#0000d7
 
-hi IncSearch    ctermbg=20      guifg=#0000d7
-hi Search       ctermbg=20      guifg=#0000d7
+hi IncSearch    ctermbg=20      guibg=#0000d7
+hi Search       ctermbg=20      guibg=#0000d7
 
 " popup menu: Ctrl-N
 hi Pmenu        ctermfg=231 ctermbg=18 guifg=#ffffff guibg=#000087
 hi PmenuSel     ctermfg=231 ctermbg=20 guifg=#ffffff guibg=#0000d7
 hi PmenuSbar    ctermbg=18      guibg=#000087
-hi PmenuThumb   ctermbg=20      guifg=#0000d7
+hi PmenuThumb   ctermbg=20      guibg=#0000d7
 
 "hi MoreMsg
 hi Question     ctermfg=20 ctermbg=231 cterm=reverse guifg=#0000d7 guibg=#ffffff gui=reverse
@@ -229,9 +229,9 @@ hi SpellCap     cterm=underline gui=underline
 hi SpellRare    cterm=underline gui=underline
 hi SpellLocal   cterm=underline gui=underline
 
-hi DiffDelete   ctermbg=52      guifg=#5f0000
-hi DiffAdd      ctermbg=22      guifg=#005f00
-hi DiffText     ctermbg=130     guifg=#af5f00
+hi DiffDelete   ctermbg=52      guibg=#5f0000
+hi DiffAdd      ctermbg=22      guibg=#005f00
+hi DiffText     ctermbg=130     guibg=#af5f00
 "hi DiffChange
 
 " # Markdown Title
